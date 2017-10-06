@@ -6,7 +6,7 @@
 
 // API class
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.lang.reflect.*;
 import java.io.*;
@@ -77,7 +77,7 @@ public class FunctionObject extends BaseFunction
      * @param methodOrConstructor a java.lang.reflect.Method or a java.lang.reflect.Constructor
      *                            that defines the object
      * @param scope enclosing scope of function
-     * @see org.mozilla.javascript.Scriptable
+     * @see com.apperian.org.mozilla.javascript.Scriptable
      */
     public FunctionObject(String name, Member methodOrConstructor,
                           Scriptable scope)
@@ -315,9 +315,9 @@ public class FunctionObject extends BaseFunction
      * @param scope the scope in which to define the constructor (typically
      *              the global object)
      * @param prototype the prototype object
-     * @see org.mozilla.javascript.Scriptable#setParentScope
-     * @see org.mozilla.javascript.Scriptable#setPrototype
-     * @see org.mozilla.javascript.Scriptable#getClassName
+     * @see com.apperian.org.mozilla.javascript.Scriptable#setParentScope
+     * @see com.apperian.org.mozilla.javascript.Scriptable#setPrototype
+     * @see com.apperian.org.mozilla.javascript.Scriptable#getClassName
      */
     public void addAsConstructor(Scriptable scope, Scriptable prototype)
     {
@@ -363,7 +363,7 @@ public class FunctionObject extends BaseFunction
      * <p>
      * Implements Function.call.
      *
-     * @see org.mozilla.javascript.Function#call(
+     * @see com.apperian.org.mozilla.javascript.Function#call(
      *          Context, Scriptable, Scriptable, Object[])
      */
     @Override

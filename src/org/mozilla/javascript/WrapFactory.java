@@ -6,7 +6,7 @@
 
 // API class
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 /**
  * Embeddings that wish to provide their own custom wrappings for Java
@@ -17,7 +17,7 @@ package org.mozilla.javascript;
  * will call the methods of this class whenever it needs to wrap a value
  * resulting from a call to a Java method or an access to a Java field.
  *
- * @see org.mozilla.javascript.Context#setWrapFactory(WrapFactory)
+ * @see com.apperian.org.mozilla.javascript.Context#setWrapFactory(WrapFactory)
  * @since 1.5 Release 4
  */
 public class WrapFactory
@@ -30,7 +30,7 @@ public class WrapFactory
      * <LI>java.lang.Boolean</LI>
      * <LI>java.lang.String</LI>
      * <LI>java.lang.Number</LI>
-     * <LI>org.mozilla.javascript.Scriptable objects</LI>
+     * <LI>com.apperian.org.mozilla.javascript.Scriptable objects</LI>
      * <LI>The value returned by Context.getUndefinedValue()</LI>
      * <LI>null</LI>
      * </UL>

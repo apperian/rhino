@@ -6,7 +6,7 @@
 
 // API class
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 public interface ConstProperties {
     /**
@@ -36,7 +36,7 @@ public interface ConstProperties {
      * <LI>java.lang.Boolean objects</LI>
      * <LI>java.lang.String objects</LI>
      * <LI>java.lang.Number objects</LI>
-     * <LI>org.mozilla.javascript.Scriptable objects</LI>
+     * <LI>com.apperian.org.mozilla.javascript.Scriptable objects</LI>
      * <LI>null</LI>
      * <LI>The value returned by Context.getUndefinedValue()</LI>
      * </UL><p>
@@ -51,10 +51,10 @@ public interface ConstProperties {
      * @param name the name of the property
      * @param start the object whose property is being set
      * @param value value to set the property to
-     * @see org.mozilla.javascript.Scriptable#has(String, Scriptable)
-     * @see org.mozilla.javascript.Scriptable#get(String, Scriptable)
-     * @see org.mozilla.javascript.ScriptableObject#putProperty(Scriptable, String, Object)
-     * @see org.mozilla.javascript.Context#toObject(Object, Scriptable)
+     * @see com.apperian.org.mozilla.javascript.Scriptable#has(String, Scriptable)
+     * @see com.apperian.org.mozilla.javascript.Scriptable#get(String, Scriptable)
+     * @see com.apperian.org.mozilla.javascript.ScriptableObject#putProperty(Scriptable, String, Object)
+     * @see com.apperian.org.mozilla.javascript.Context#toObject(Object, Scriptable)
      */
     public void putConst(String name, Scriptable start, Object value);
 

@@ -4,15 +4,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
-import org.mozilla.javascript.regexp.NativeRegExp;
+import com.apperian.org.mozilla.javascript.regexp.NativeRegExp;
 
 import java.text.Collator;
 import java.text.Normalizer;
 
-import static org.mozilla.javascript.ScriptRuntime.rangeError;
-import static org.mozilla.javascript.ScriptRuntimeES6.requireObjectCoercible;
+import static com.apperian.org.mozilla.javascript.ScriptRuntime.rangeError;
+import static com.apperian.org.mozilla.javascript.ScriptRuntimeES6.requireObjectCoercible;
 
 /**
  * This class implements the String native object.

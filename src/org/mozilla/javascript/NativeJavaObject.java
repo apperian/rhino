@@ -4,7 +4,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.io.*;
 import java.lang.reflect.*;
@@ -459,7 +459,7 @@ public class NativeJavaObject implements Scriptable, Wrapper, Serializable
      * Not intended for public use. Callers should use the
      * public API Context.toType.
      * @deprecated as of 1.5 Release 4
-     * @see org.mozilla.javascript.Context#jsToJava(Object, Class)
+     * @see com.apperian.org.mozilla.javascript.Context#jsToJava(Object, Class)
      */
     @Deprecated
     public static Object coerceType(Class<?> type, Object value)
@@ -946,7 +946,7 @@ public class NativeJavaObject implements Scriptable, Wrapper, Serializable
     static {
         // Reflection in java is verbose
         Class<?>[] sig2 = new Class[2];
-        Class<?> cl = Kit.classOrNull("org.mozilla.javascript.JavaAdapter");
+        Class<?> cl = Kit.classOrNull("com.apperian.org.mozilla.javascript.JavaAdapter");
         if (cl != null) {
             try {
                 sig2[0] = ScriptRuntime.ObjectClass;

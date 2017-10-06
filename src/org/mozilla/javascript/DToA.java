@@ -23,7 +23,7 @@
   *
   ***************************************************************/
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.math.BigInteger;
 

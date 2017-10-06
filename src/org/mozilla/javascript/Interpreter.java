@@ -4,19 +4,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.io.PrintStream;
 import java.io.Serializable;
 import java.util.List;
 import java.util.ArrayList;
 
-import org.mozilla.javascript.ast.FunctionNode;
-import org.mozilla.javascript.ast.ScriptNode;
-import org.mozilla.javascript.ScriptRuntime.NoSuchMethodShim;
-import org.mozilla.javascript.debug.DebugFrame;
+import com.apperian.org.mozilla.javascript.ast.FunctionNode;
+import com.apperian.org.mozilla.javascript.ast.ScriptNode;
+import com.apperian.org.mozilla.javascript.ScriptRuntime.NoSuchMethodShim;
+import com.apperian.org.mozilla.javascript.debug.DebugFrame;
 
-import static org.mozilla.javascript.UniqueTag.DOUBLE_MARK;
+import static com.apperian.org.mozilla.javascript.UniqueTag.DOUBLE_MARK;
 
 public final class Interpreter extends Icode implements Evaluator
 {
@@ -661,7 +661,7 @@ public final class Interpreter extends Icode implements Evaluator
     public String getPatchedStack(RhinoException ex,
                                   String nativeStackTrace)
     {
-        String tag = "org.mozilla.javascript.Interpreter.interpretLoop";
+        String tag = "com.apperian.org.mozilla.javascript.Interpreter.interpretLoop";
         StringBuilder sb = new StringBuilder(nativeStackTrace.length() + 1000);
         String lineSeparator = SecurityUtilities.getSystemProperty("line.separator");
 

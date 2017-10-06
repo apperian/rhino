@@ -4,15 +4,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.jdk15;
+package com.apperian.org.mozilla.javascript.jdk15;
 
 import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 import java.lang.reflect.Constructor;
 import java.util.Iterator;
-import org.mozilla.javascript.*;
+import com.apperian.org.mozilla.javascript.*;
 
-public class VMBridge_jdk15 extends org.mozilla.javascript.jdk13.VMBridge_jdk13
+public class VMBridge_jdk15 extends com.apperian.org.mozilla.javascript.jdk13.VMBridge_jdk13
 {
     public VMBridge_jdk15() throws SecurityException, InstantiationException {
         try {
@@ -22,7 +22,7 @@ public class VMBridge_jdk15 extends org.mozilla.javascript.jdk13.VMBridge_jdk13
             Method.class.getMethod("isVarArgs", (Class[]) null);
         } catch (NoSuchMethodException e) {
             // Throw a fitting exception that is handled by
-            // org.mozilla.javascript.Kit.newInstanceOrNull:
+            // com.apperian.org.mozilla.javascript.Kit.newInstanceOrNull:
             throw new InstantiationException(e.getMessage());
         }
     }

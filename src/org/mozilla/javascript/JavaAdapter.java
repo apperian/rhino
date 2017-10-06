@@ -4,9 +4,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
-import org.mozilla.classfile.*;
+import com.apperian.org.mozilla.classfile.*;
 import java.lang.reflect.*;
 import java.io.*;
 import java.security.*;

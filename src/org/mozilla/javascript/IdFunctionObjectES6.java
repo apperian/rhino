@@ -1,4 +1,4 @@
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 public class IdFunctionObjectES6 extends IdFunctionObject{
 

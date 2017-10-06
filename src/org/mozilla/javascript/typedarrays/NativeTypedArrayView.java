@@ -4,18 +4,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.typedarrays;
+package com.apperian.org.mozilla.javascript.typedarrays;
 
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.ExternalArrayData;
-import org.mozilla.javascript.IdFunctionObject;
-import org.mozilla.javascript.NativeArray;
-import org.mozilla.javascript.NativeArrayIterator;
-import org.mozilla.javascript.ScriptRuntime;
-import org.mozilla.javascript.Scriptable;
-import org.mozilla.javascript.Symbol;
-import org.mozilla.javascript.SymbolKey;
-import org.mozilla.javascript.Undefined;
+import com.apperian.org.mozilla.javascript.Context;
+import com.apperian.org.mozilla.javascript.ExternalArrayData;
+import com.apperian.org.mozilla.javascript.IdFunctionObject;
+import com.apperian.org.mozilla.javascript.NativeArray;
+import com.apperian.org.mozilla.javascript.NativeArrayIterator;
+import com.apperian.org.mozilla.javascript.ScriptRuntime;
+import com.apperian.org.mozilla.javascript.Scriptable;
+import com.apperian.org.mozilla.javascript.Symbol;
+import com.apperian.org.mozilla.javascript.SymbolKey;
+import com.apperian.org.mozilla.javascript.Undefined;
 
 import java.lang.reflect.Array;
 import java.util.Collection;

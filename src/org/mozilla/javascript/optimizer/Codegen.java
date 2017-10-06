@@ -5,23 +5,23 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 
-package org.mozilla.javascript.optimizer;
+package com.apperian.org.mozilla.javascript.optimizer;
 
-import org.mozilla.javascript.*;
-import org.mozilla.javascript.ast.FunctionNode;
-import org.mozilla.javascript.ast.Jump;
-import org.mozilla.javascript.ast.Name;
-import org.mozilla.javascript.ast.ScriptNode;
-import org.mozilla.classfile.*;
+import com.apperian.org.mozilla.javascript.*;
+import com.apperian.org.mozilla.javascript.ast.FunctionNode;
+import com.apperian.org.mozilla.javascript.ast.Jump;
+import com.apperian.org.mozilla.javascript.ast.Name;
+import com.apperian.org.mozilla.javascript.ast.ScriptNode;
+import com.apperian.org.mozilla.classfile.*;
 
 import java.util.*;
 import java.lang.reflect.Constructor;
 
-import static org.mozilla.classfile.ClassFileWriter.ACC_FINAL;
-import static org.mozilla.classfile.ClassFileWriter.ACC_PRIVATE;
-import static org.mozilla.classfile.ClassFileWriter.ACC_PUBLIC;
-import static org.mozilla.classfile.ClassFileWriter.ACC_STATIC;
-import static org.mozilla.classfile.ClassFileWriter.ACC_VOLATILE;
+import static com.apperian.org.mozilla.classfile.ClassFileWriter.ACC_FINAL;
+import static com.apperian.org.mozilla.classfile.ClassFileWriter.ACC_PRIVATE;
+import static com.apperian.org.mozilla.classfile.ClassFileWriter.ACC_PUBLIC;
+import static com.apperian.org.mozilla.classfile.ClassFileWriter.ACC_STATIC;
+import static com.apperian.org.mozilla.classfile.ClassFileWriter.ACC_VOLATILE;
 
 /**
  * This class generates code for a given IR tree.
@@ -70,7 +70,7 @@ public class Codegen implements Evaluator
           }
         }
 
-        String mainClassName = "org.mozilla.javascript.gen." + baseName + "_" + serial;
+        String mainClassName = "com.apperian.org.mozilla.javascript.gen." + baseName + "_" + serial;
 
         byte[] mainClassBytes = compileToClassFile(compilerEnv, mainClassName,
                                                    tree, encodedSource,
@@ -1215,10 +1215,10 @@ public class Codegen implements Evaluator
      }
 
      static final String DEFAULT_MAIN_METHOD_CLASS
-        = "org.mozilla.javascript.optimizer.OptRuntime";
+        = "com.apperian.org.mozilla.javascript.optimizer.OptRuntime";
 
     private static final String SUPER_CLASS_NAME
-        = "org.mozilla.javascript.NativeFunction";
+        = "com.apperian.org.mozilla.javascript.NativeFunction";
 
     static final String ID_FIELD_NAME = "_id";
 
@@ -5351,7 +5351,7 @@ Else pass the JS object in the aReg and 0.0 in the dReg.
                                         String methodSignature)
     {
         cfw.addInvoke(ByteCode.INVOKESTATIC,
-                      "org.mozilla.javascript.ScriptRuntime",
+                      "com.apperian.org.mozilla.javascript.ScriptRuntime",
                       methodName,
                       methodSignature);
     }

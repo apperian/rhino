@@ -6,7 +6,7 @@
 
 // API class
 
-package org.mozilla.javascript.debug;
+package com.apperian.org.mozilla.javascript.debug;
 
 /**
  * This interface exposes debugging information from objects.

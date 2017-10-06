@@ -6,7 +6,7 @@
 
 // API class
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -28,11 +28,11 @@ import java.util.Set;
 import java.util.jar.Attributes;
 import java.util.jar.Manifest;
 
-import org.mozilla.javascript.ast.AstRoot;
-import org.mozilla.javascript.ast.ScriptNode;
-import org.mozilla.javascript.debug.DebuggableScript;
-import org.mozilla.javascript.debug.Debugger;
-import org.mozilla.javascript.xml.XMLLib;
+import com.apperian.org.mozilla.javascript.ast.AstRoot;
+import com.apperian.org.mozilla.javascript.ast.ScriptNode;
+import com.apperian.org.mozilla.javascript.debug.DebuggableScript;
+import com.apperian.org.mozilla.javascript.debug.Debugger;
+import com.apperian.org.mozilla.javascript.xml.XMLLib;
 
 /**
  * This class represents the runtime context of an executing script.
@@ -532,18 +532,18 @@ public class Context
 
     /**
      * @deprecated
-     * @see ContextFactory#addListener(org.mozilla.javascript.ContextFactory.Listener)
+     * @see ContextFactory#addListener(com.apperian.org.mozilla.javascript.ContextFactory.Listener)
      * @see ContextFactory#getGlobal()
      */
     @Deprecated
     public static void addContextListener(ContextListener listener)
     {
         // Special workaround for the debugger
-        String DBG = "org.mozilla.javascript.tools.debugger.Main";
+        String DBG = "com.apperian.org.mozilla.javascript.tools.debugger.Main";
         if (DBG.equals(listener.getClass().getName())) {
             Class<?> cl = listener.getClass();
             Class<?> factoryClass = Kit.classOrNull(
-                "org.mozilla.javascript.ContextFactory");
+                "com.apperian.org.mozilla.javascript.ContextFactory");
             Class<?>[] sig = { factoryClass };
             Object[] args = { ContextFactory.getGlobal() };
             try {
@@ -562,7 +562,7 @@ public class Context
 
     /**
      * @deprecated
-     * @see ContextFactory#removeListener(org.mozilla.javascript.ContextFactory.Listener)
+     * @see ContextFactory#removeListener(com.apperian.org.mozilla.javascript.ContextFactory.Listener)
      * @see ContextFactory#getGlobal()
      */
     @Deprecated
@@ -752,7 +752,7 @@ public class Context
     /**
      * Get the current error reporter.
      *
-     * @see org.mozilla.javascript.ErrorReporter
+     * @see com.apperian.org.mozilla.javascript.ErrorReporter
      */
     public final ErrorReporter getErrorReporter()
     {
@@ -766,7 +766,7 @@ public class Context
      * Change the current error reporter.
      *
      * @return the previous error reporter
-     * @see org.mozilla.javascript.ErrorReporter
+     * @see com.apperian.org.mozilla.javascript.ErrorReporter
      */
     public final ErrorReporter setErrorReporter(ErrorReporter reporter)
     {
@@ -880,7 +880,7 @@ public class Context
      * @param lineno the starting line number
      * @param lineSource the text of the line (may be null)
      * @param lineOffset the offset into lineSource where problem was detected
-     * @see org.mozilla.javascript.ErrorReporter
+     * @see com.apperian.org.mozilla.javascript.ErrorReporter
      */
     public static void reportWarning(String message, String sourceName,
                                      int lineno, String lineSource,
@@ -898,7 +898,7 @@ public class Context
      * Report a warning using the error reporter for the current thread.
      *
      * @param message the warning message to report
-     * @see org.mozilla.javascript.ErrorReporter
+     * @see com.apperian.org.mozilla.javascript.ErrorReporter
      */
     public static void reportWarning(String message)
     {
@@ -927,7 +927,7 @@ public class Context
      * @param lineno the starting line number
      * @param lineSource the text of the line (may be null)
      * @param lineOffset the offset into lineSource where problem was detected
-     * @see org.mozilla.javascript.ErrorReporter
+     * @see com.apperian.org.mozilla.javascript.ErrorReporter
      */
     public static void reportError(String message, String sourceName,
                                    int lineno, String lineSource,
@@ -947,7 +947,7 @@ public class Context
      * Report an error using the error reporter for the current thread.
      *
      * @param message the error message to report
-     * @see org.mozilla.javascript.ErrorReporter
+     * @see com.apperian.org.mozilla.javascript.ErrorReporter
      */
     public static void reportError(String message)
     {
@@ -966,7 +966,7 @@ public class Context
      * @param lineOffset the offset into lineSource where problem was detected
      * @return a runtime exception that will be thrown to terminate the
      *         execution of the script
-     * @see org.mozilla.javascript.ErrorReporter
+     * @see com.apperian.org.mozilla.javascript.ErrorReporter
      */
     public static EvaluatorException reportRuntimeError(String message,
                                                         String sourceName,
@@ -1026,7 +1026,7 @@ public class Context
      * Report a runtime error using the error reporter for the current thread.
      *
      * @param message the error message to report
-     * @see org.mozilla.javascript.ErrorReporter
+     * @see com.apperian.org.mozilla.javascript.ErrorReporter
      */
     public static EvaluatorException reportRuntimeError(String message)
     {
@@ -1232,7 +1232,7 @@ public class Context
      *        implementations that don't care about security, this value
      *        may be null.
      * @return the result of evaluating the string
-     * @see org.mozilla.javascript.SecurityController
+     * @see com.apperian.org.mozilla.javascript.SecurityController
      */
     public final Object evaluateString(Scriptable scope, String source,
                                        String sourceName, int lineno,
@@ -1377,7 +1377,7 @@ public class Context
     {
         Object[] args = { functionResult };
         return Interpreter.restartContinuation(
-                (org.mozilla.javascript.NativeContinuation) continuation,
+                (com.apperian.org.mozilla.javascript.NativeContinuation) continuation,
                 this, scope, args);
     }
 
@@ -1445,7 +1445,7 @@ public class Context
      *        may be null.
      * @return a script that may later be executed
      * @exception IOException if an IOException was generated by the Reader
-     * @see org.mozilla.javascript.Script
+     * @see com.apperian.org.mozilla.javascript.Script
      */
     public final Script compileReader(Reader in, String sourceName,
                                       int lineno, Object securityDomain)
@@ -1473,7 +1473,7 @@ public class Context
      *        implementations that don't care about security, this value
      *        may be null.
      * @return a script that may later be executed
-     * @see org.mozilla.javascript.Script
+     * @see com.apperian.org.mozilla.javascript.Script
      */
     public final Script compileString(String source,
                                       String sourceName, int lineno,
@@ -1518,7 +1518,7 @@ public class Context
      *        implementations that don't care about security, this value
      *        may be null.
      * @return a Function that may later be called
-     * @see org.mozilla.javascript.Function
+     * @see com.apperian.org.mozilla.javascript.Function
      */
     public final Function compileFunction(Scriptable scope, String source,
                                           String sourceName, int lineno,
@@ -2571,9 +2571,9 @@ public class Context
     }
 
     private static Class<?> codegenClass = Kit.classOrNull(
-                             "org.mozilla.javascript.optimizer.Codegen");
+                             "com.apperian.org.mozilla.javascript.optimizer.Codegen");
     private static Class<?> interpreterClass = Kit.classOrNull(
-                             "org.mozilla.javascript.Interpreter");
+                             "com.apperian.org.mozilla.javascript.Interpreter");
 
     private Evaluator createCompiler()
     {
@@ -2625,7 +2625,7 @@ public class Context
     {
         if (regExpProxy == null) {
             Class<?> cl = Kit.classOrNull(
-                          "org.mozilla.javascript.regexp.RegExpImpl");
+                          "com.apperian.org.mozilla.javascript.regexp.RegExpImpl");
             if (cl != null) {
                 regExpProxy = (RegExpProxy)Kit.newInstanceOrNull(cl);
             }

@@ -4,17 +4,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.ast;
+package com.apperian.org.mozilla.javascript.ast;
 
-import org.mozilla.javascript.EvaluatorException;
+import com.apperian.org.mozilla.javascript.EvaluatorException;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * An error reporter that gathers the errors and warnings for later display.
- * This a useful {@link org.mozilla.javascript.ErrorReporter} when the
- * {@link org.mozilla.javascript.CompilerEnvirons} is set to
+ * This a useful {@link com.apperian.org.mozilla.javascript.ErrorReporter} when the
+ * {@link com.apperian.org.mozilla.javascript.CompilerEnvirons} is set to
  * ide-mode (for IDEs).
  *
  * @author Steve Yegge

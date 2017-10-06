@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 
-package org.mozilla.javascript.optimizer;
+package com.apperian.org.mozilla.javascript.optimizer;
 
-import org.mozilla.javascript.*;
+import com.apperian.org.mozilla.javascript.*;
 
 public final class OptRuntime extends ScriptRuntime
 {

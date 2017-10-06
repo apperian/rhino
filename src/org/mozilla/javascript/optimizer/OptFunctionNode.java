@@ -3,11 +3,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 
-package org.mozilla.javascript.optimizer;
+package com.apperian.org.mozilla.javascript.optimizer;
 
-import org.mozilla.javascript.*;
-import org.mozilla.javascript.ast.FunctionNode;
-import org.mozilla.javascript.ast.ScriptNode;
+import com.apperian.org.mozilla.javascript.*;
+import com.apperian.org.mozilla.javascript.ast.FunctionNode;
+import com.apperian.org.mozilla.javascript.ast.ScriptNode;
 
 public final class OptFunctionNode
 {

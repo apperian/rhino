@@ -6,11 +6,11 @@
 
 // API class
 
-package org.mozilla.javascript.serialize;
+package com.apperian.org.mozilla.javascript.serialize;
 
 import java.io.*;
 
-import org.mozilla.javascript.*;
+import com.apperian.org.mozilla.javascript.*;
 
 /**
  * Class ScriptableInputStream is used to read in a JavaScript

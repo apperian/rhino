@@ -4,10 +4,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.ast;
+package com.apperian.org.mozilla.javascript.ast;
 
-import org.mozilla.javascript.Node;
-import org.mozilla.javascript.Token;
+import com.apperian.org.mozilla.javascript.Node;
+import com.apperian.org.mozilla.javascript.Token;
 
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -18,9 +18,9 @@ import java.util.TreeSet;
  * as a whole.  Node type is {@link Token#SCRIPT}. <p>
  *
  * Note that the tree itself does not store errors.  To collect the parse errors
- * and warnings, pass an {@link org.mozilla.javascript.ErrorReporter} to the
- * {@link org.mozilla.javascript.Parser} via the
- * {@link org.mozilla.javascript.CompilerEnvirons}.
+ * and warnings, pass an {@link com.apperian.org.mozilla.javascript.ErrorReporter} to the
+ * {@link com.apperian.org.mozilla.javascript.Parser} via the
+ * {@link com.apperian.org.mozilla.javascript.CompilerEnvirons}.
  */
 public class AstRoot extends ScriptNode {
 

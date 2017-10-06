@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.optimizer;
+package com.apperian.org.mozilla.javascript.optimizer;
 
-import org.mozilla.javascript.*;
-import org.mozilla.javascript.ast.Jump;
+import com.apperian.org.mozilla.javascript.*;
+import com.apperian.org.mozilla.javascript.ast.Jump;
 
 import java.util.BitSet;
 import java.util.HashMap;

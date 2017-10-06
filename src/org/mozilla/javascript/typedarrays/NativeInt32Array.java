@@ -4,13 +4,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.typedarrays;
+package com.apperian.org.mozilla.javascript.typedarrays;
 
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.IdFunctionObject;
-import org.mozilla.javascript.ScriptRuntime;
-import org.mozilla.javascript.Scriptable;
-import org.mozilla.javascript.Undefined;
+import com.apperian.org.mozilla.javascript.Context;
+import com.apperian.org.mozilla.javascript.IdFunctionObject;
+import com.apperian.org.mozilla.javascript.ScriptRuntime;
+import com.apperian.org.mozilla.javascript.Scriptable;
+import com.apperian.org.mozilla.javascript.Undefined;
 
 /**
  * An array view that stores 32-bit quantities and implements the JavaScript "Int32Array" interface.

@@ -4,10 +4,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.ast;
+package com.apperian.org.mozilla.javascript.ast;
 
-import org.mozilla.javascript.Node;
-import org.mozilla.javascript.Token;
+import com.apperian.org.mozilla.javascript.Node;
+import com.apperian.org.mozilla.javascript.Token;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -263,7 +263,7 @@ public class FunctionNode extends ScriptNode {
     /**
      * Return true if this function requires an Ecma-262 Activation object.
      * The Activation object is implemented by
-     * {@link org.mozilla.javascript.NativeCall}, and is fairly expensive
+     * {@link com.apperian.org.mozilla.javascript.NativeCall}, and is fairly expensive
      * to create, so when possible, the interpreter attempts to use a plain
      * call frame instead.
      *

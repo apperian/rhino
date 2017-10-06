@@ -6,7 +6,7 @@
 
 // API class
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 /**
  * This is interface defines a protocol for the reporting of

@@ -4,15 +4,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
-import org.mozilla.javascript.ast.Comment;
-import org.mozilla.javascript.ast.FunctionNode;
-import org.mozilla.javascript.ast.Jump;
-import org.mozilla.javascript.ast.Name;
-import org.mozilla.javascript.ast.NumberLiteral;
-import org.mozilla.javascript.ast.Scope;
-import org.mozilla.javascript.ast.ScriptNode;
+import com.apperian.org.mozilla.javascript.ast.Comment;
+import com.apperian.org.mozilla.javascript.ast.FunctionNode;
+import com.apperian.org.mozilla.javascript.ast.Jump;
+import com.apperian.org.mozilla.javascript.ast.Name;
+import com.apperian.org.mozilla.javascript.ast.NumberLiteral;
+import com.apperian.org.mozilla.javascript.ast.Scope;
+import com.apperian.org.mozilla.javascript.ast.ScriptNode;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

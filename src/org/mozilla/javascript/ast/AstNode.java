@@ -4,11 +4,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.ast;
+package com.apperian.org.mozilla.javascript.ast;
 
-import org.mozilla.javascript.Kit;
-import org.mozilla.javascript.Node;
-import org.mozilla.javascript.Token;
+import com.apperian.org.mozilla.javascript.Kit;
+import com.apperian.org.mozilla.javascript.Node;
+import com.apperian.org.mozilla.javascript.Token;
 
 import java.io.Serializable;
 import java.util.Comparator;

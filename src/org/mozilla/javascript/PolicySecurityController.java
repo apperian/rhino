@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.lang.ref.SoftReference;
 import java.lang.reflect.UndeclaredThrowableException;
@@ -16,8 +16,8 @@ import java.security.SecureClassLoader;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import org.mozilla.classfile.ByteCode;
-import org.mozilla.classfile.ClassFileWriter;
+import com.apperian.org.mozilla.classfile.ByteCode;
+import com.apperian.org.mozilla.classfile.ClassFileWriter;
 
 /**
  * A security controller relying on Java {@link Policy} in effect. When you use

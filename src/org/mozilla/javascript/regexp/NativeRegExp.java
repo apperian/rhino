@@ -4,20 +4,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.regexp;
+package com.apperian.org.mozilla.javascript.regexp;
 
 import java.io.Serializable;
 
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Function;
-import org.mozilla.javascript.IdFunctionObject;
-import org.mozilla.javascript.IdScriptableObject;
-import org.mozilla.javascript.Kit;
-import org.mozilla.javascript.ScriptRuntime;
-import org.mozilla.javascript.Scriptable;
-import org.mozilla.javascript.ScriptableObject;
-import org.mozilla.javascript.TopLevel;
-import org.mozilla.javascript.Undefined;
+import com.apperian.org.mozilla.javascript.Context;
+import com.apperian.org.mozilla.javascript.Function;
+import com.apperian.org.mozilla.javascript.IdFunctionObject;
+import com.apperian.org.mozilla.javascript.IdScriptableObject;
+import com.apperian.org.mozilla.javascript.Kit;
+import com.apperian.org.mozilla.javascript.ScriptRuntime;
+import com.apperian.org.mozilla.javascript.Scriptable;
+import com.apperian.org.mozilla.javascript.ScriptableObject;
+import com.apperian.org.mozilla.javascript.TopLevel;
+import com.apperian.org.mozilla.javascript.Undefined;
 
 /**
  * This class implements the RegExp native object.
@@ -151,7 +151,7 @@ public class NativeRegExp extends IdScriptableObject implements Function
 
     /**
      * Gets the value to be returned by the typeof operator called on this object.
-     * @see org.mozilla.javascript.ScriptableObject#getTypeOf()
+     * @see com.apperian.org.mozilla.javascript.ScriptableObject#getTypeOf()
      * @return "object"
      */
     @Override

@@ -4,14 +4,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.classfile;
+package com.apperian.org.mozilla.classfile;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import org.mozilla.javascript.ObjToIntMap;
-import org.mozilla.javascript.ObjArray;
-import org.mozilla.javascript.UintMap;
+import com.apperian.org.mozilla.javascript.ObjToIntMap;
+import com.apperian.org.mozilla.javascript.ObjArray;
+import com.apperian.org.mozilla.javascript.UintMap;
 
 import java.util.Arrays;
 

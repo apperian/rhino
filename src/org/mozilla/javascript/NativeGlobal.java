@@ -4,14 +4,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.io.Serializable;
 
-import org.mozilla.javascript.xml.XMLLib;
-import static org.mozilla.javascript.ScriptableObject.DONTENUM;
-import static org.mozilla.javascript.ScriptableObject.READONLY;
-import static org.mozilla.javascript.ScriptableObject.PERMANENT;
+import com.apperian.org.mozilla.javascript.xml.XMLLib;
+import static com.apperian.org.mozilla.javascript.ScriptableObject.DONTENUM;
+import static com.apperian.org.mozilla.javascript.ScriptableObject.READONLY;
+import static com.apperian.org.mozilla.javascript.ScriptableObject.PERMANENT;
 
 /**
  * This class implements the global native object (function and value

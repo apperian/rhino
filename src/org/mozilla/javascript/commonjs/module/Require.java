@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.commonjs.module;
+package com.apperian.org.mozilla.javascript.commonjs.module;
 
 import java.io.File;
 import java.net.URI;
@@ -11,12 +11,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.mozilla.javascript.BaseFunction;
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Script;
-import org.mozilla.javascript.ScriptRuntime;
-import org.mozilla.javascript.Scriptable;
-import org.mozilla.javascript.ScriptableObject;
+import com.apperian.org.mozilla.javascript.BaseFunction;
+import com.apperian.org.mozilla.javascript.Context;
+import com.apperian.org.mozilla.javascript.Script;
+import com.apperian.org.mozilla.javascript.ScriptRuntime;
+import com.apperian.org.mozilla.javascript.Scriptable;
+import com.apperian.org.mozilla.javascript.ScriptableObject;
 
 /**
  * Implements the require() function as defined by

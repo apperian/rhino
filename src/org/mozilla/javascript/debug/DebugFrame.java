@@ -6,10 +6,10 @@
 
 // API class
 
-package org.mozilla.javascript.debug;
+package com.apperian.org.mozilla.javascript.debug;
 
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Scriptable;
+import com.apperian.org.mozilla.javascript.Context;
+import com.apperian.org.mozilla.javascript.Scriptable;
 
 /**
 Interface to implement if the application is interested in receiving debug

@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.commonjs.module;
+package com.apperian.org.mozilla.javascript.commonjs.module;
 
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Scriptable;
+import com.apperian.org.mozilla.javascript.Context;
+import com.apperian.org.mozilla.javascript.Scriptable;
 
 import java.net.URI;
 

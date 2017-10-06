@@ -4,7 +4,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.jdk13;
+package com.apperian.org.mozilla.javascript.jdk13;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Constructor;
@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Member;
 import java.lang.reflect.Proxy;
 
-import org.mozilla.javascript.*;
+import com.apperian.org.mozilla.javascript.*;
 
 public class VMBridge_jdk13 extends VMBridge
 {

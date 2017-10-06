@@ -6,13 +6,13 @@
 
 // API class
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 /**
  * This is interface that all functions in JavaScript must implement.
  * The interface provides for calling functions and constructors.
  *
- * @see org.mozilla.javascript.Scriptable
+ * @see com.apperian.org.mozilla.javascript.Scriptable
  * @author Norris Boyd
  */
 

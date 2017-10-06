@@ -6,7 +6,7 @@
 
 // API class
 
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Member;
@@ -20,10 +20,10 @@ public abstract class VMBridge
     private static VMBridge makeInstance()
     {
         String[] classNames = {
-            "org.mozilla.javascript.VMBridge_custom",
-            "org.mozilla.javascript.jdk15.VMBridge_jdk15",
-            "org.mozilla.javascript.jdk13.VMBridge_jdk13",
-            "org.mozilla.javascript.jdk11.VMBridge_jdk11",
+            "com.apperian.org.mozilla.javascript.VMBridge_custom",
+            "com.apperian.org.mozilla.javascript.jdk15.VMBridge_jdk15",
+            "com.apperian.org.mozilla.javascript.jdk13.VMBridge_jdk13",
+            "com.apperian.org.mozilla.javascript.jdk11.VMBridge_jdk11",
         };
         for (int i = 0; i != classNames.length; ++i) {
             String className = classNames[i];

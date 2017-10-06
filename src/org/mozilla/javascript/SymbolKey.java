@@ -1,4 +1,4 @@
-package org.mozilla.javascript;
+package com.apperian.org.mozilla.javascript;
 
 import java.io.Serializable;
 

@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.commonjs.module.provider;
+package com.apperian.org.mozilla.javascript.commonjs.module.provider;
 
 import java.io.Reader;
 import java.io.Serializable;
 import java.net.URI;
 
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Scriptable;
-import org.mozilla.javascript.commonjs.module.ModuleScript;
-import org.mozilla.javascript.commonjs.module.ModuleScriptProvider;
+import com.apperian.org.mozilla.javascript.Context;
+import com.apperian.org.mozilla.javascript.Scriptable;
+import com.apperian.org.mozilla.javascript.commonjs.module.ModuleScript;
+import com.apperian.org.mozilla.javascript.commonjs.module.ModuleScriptProvider;
 
 /**
  * Abstract base class that implements caching of loaded module scripts. It

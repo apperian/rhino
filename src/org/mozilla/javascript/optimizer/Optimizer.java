@@ -4,10 +4,10 @@
 
 
 
-package org.mozilla.javascript.optimizer;
+package com.apperian.org.mozilla.javascript.optimizer;
 
-import org.mozilla.javascript.*;
-import org.mozilla.javascript.ast.ScriptNode;
+import com.apperian.org.mozilla.javascript.*;
+import com.apperian.org.mozilla.javascript.ast.ScriptNode;
 
 class Optimizer
 {

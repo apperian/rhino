@@ -4,10 +4,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-package org.mozilla.javascript.ast;
+package com.apperian.org.mozilla.javascript.ast;
 
-import org.mozilla.javascript.Node;
-import org.mozilla.javascript.Token;
+import com.apperian.org.mozilla.javascript.Node;
+import com.apperian.org.mozilla.javascript.Token;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -121,7 +121,7 @@ public class ScriptNode extends Scope {
      * for use in implementing the {@code Object.toSource} method of
      * JavaScript objects.  This source encoding is only recorded during code
      * generation.  It must be passed back to
-     * {@link org.mozilla.javascript.Decompiler#decompile} to construct the
+     * {@link com.apperian.org.mozilla.javascript.Decompiler#decompile} to construct the
      * human-readable source string.<p>
      *
      * Given a parsed AST, you can always convert it to source code using the
